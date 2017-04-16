@@ -1,5 +1,6 @@
-##Extended Kalman Filter
-###Fuse LIDAR and radar to track object
+## Extended Kalman Filter
+
+### Fuse LIDAR and radar to track object
 
 ---
 
@@ -12,33 +13,34 @@
 ### How to use it
 
 download this project:
+
 `git clone 'thisrepo'`
+
 change directory:
+
 `cd thisrepo/build`
+
 compile the project (optional)
+
 `cmake .. && make`
+
 run the executable with input and output files specified:
+
 `./ExtendedKF ../data/sample-laser-radar-measurement-data-1.txt ../data/out.txt`
 
 ### Accuracy result
-#####For input data 'sample-laser-radar-measurement-data-1.txt':
+#### For input data 'sample-laser-radar-measurement-data-1.txt':
 
 Accuracy - RMSE:
-0.065165
-0.0605294
-0.5497
-0.544984
+[0.065165, 0.0605294, 0.5497, 0.544984]
 
 ![alt text][out1]
 
 
-#####For input data 'sample-laser-radar-measurement-data-2':
+#### For input data 'sample-laser-radar-measurement-data-2':
 
 Accuracy - RMSE:
-0.185495
-0.190302
-0.487137
-0.810657
+[0.185495, 0.190302, 0.487137, 0.810657]
 
 ![alt text][out2]
 
